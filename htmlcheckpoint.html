@@ -2,41 +2,48 @@
 <html>
     <head>
         <title>portfolio for web developer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
-       
+
+      <header>
         <a name="TopOfThePage"></a>
-        <div>
-            
-            <a href="#About">About</a>
-            <a href="#Work">Work</a>
-            <a href="#Resume">Resume</a>
-            <a href="#Contact">Contact</a>
+        <nav id="navbar">
           
-        </div>
-
+            <a class="barre" href="#About">About</a>
+            <a class="barre" href="#Work">Work</a>
+            <a class="barre" href="#Resume">Resume</a>
+            <a class="barre" href="#Contact">Contact</a>
+            
+        
+        </nav>
+      </header>
        
-
-        <div>
-            <a name="About"></a>
+    <main>
+        <section id="section1">
             <h1>About</h1>
-            <h2>Gmanzola</h2>
-            <p>
-                Développeur passionné dans le domaine du web depuis plus de 6 ans,
-                actuellement développeur Web.<br>
-                Je conçois et réalise des sites web du cahier des charges à la mise en ligne.<br>
+            
+                <p>
+                Développeur passionné dans le domaine du web depuis plus de 6 ans, actuellement développeur Web.
+                Je conçois et réalise des sites web du cahier des charges à la mise en ligne.
                 Je developpe aussi en JAVA, ce qui me permet de développer des applications mobiles android
-            </p>
-
-        </div>
+                </p>
+                <p>
+                Bonjour,<br>
+                JE SUIS GAEL MANZOLA DÉVELOPPEUR WEB & JAVA<br> Création moderne et <br>responsive pour web
+             </p>
+           
+        
+        </section>
 
         
 
          
-        <div>
+        <section id="section2">
             <a name="Work"></a>
            <h1>Work</h1>
-           <table border="1">
+           <table border=1 id="table1">
             <tr>
                 <th>DÉVELOPPEMENT WEB</th>
                 <th>PROJETS WEB</th>
@@ -57,21 +64,33 @@
                 </th>
             </tr>
            </table>
-         </div>
+        </section>
           
-           <div>
+           <section id="section3">
             <h2>Mes compétence à votre service</h2>
-            <ul>
-            <li>Html</li>
+            
+            
+         <div class="images">     
+            <h3>Html</h3>
             <img src="C:\Users\hp\OneDrive\Bureau\Image\HtmlLogo.png" alt="html">
-            <li>CSS</li>
-            <img src="C:\Users\hp\OneDrive\Bureau\Image\CSSLogo.png" alt="CSS">
-            <li>Javascript</li>
-            <img src="C:\Users\hp\OneDrive\Bureau\Image\Javascript.png" alt="Javascript">
-            <li>PHP</li>
-            <img src="C:\Users\hp\OneDrive\Bureau\Image\PHPLogo.png" alt="PHP">
-            </ul>
         </div>
+
+        <div class="images"> 
+           <h3>CSS</h3>
+            <img src="C:\Users\hp\OneDrive\Bureau\Image\CSSLogo.png" alt="CSS">
+        </div>
+
+        <div class="images"> 
+           <h3>Javascript</h3>
+            <img src="C:\Users\hp\OneDrive\Bureau\Image\Javascript.png" alt="Javascript">
+        </div>
+
+        <div class="images"> 
+            <h3>PHP</h3>
+            <img src="C:\Users\hp\OneDrive\Bureau\Image\PHPLogo.png" alt="PHP">
+        </div>
+            
+          </section>
 
      
 
@@ -82,14 +101,17 @@
             <a name="Resume"></a>
             
             <h1>Web développeur</h1>
-            <p>
+            <p class="box">
                 Le Développeur Web se charge du développement de plate-formes web et 
-                répond aux besoins d'un client exprimés dans un cahier des charges.<br> 
-                Il peut travailler au sein d'une ESN (Entreprise de Service du Numérique, anciennement SSII),<br> 
+                répond aux besoins d'un client exprimés dans un cahier des charges.
+            </p>
+            <p class="box">
+                Il peut travailler au sein d'une ESN (Entreprise de Service du Numérique, anciennement SSII), 
                 d'une agence web, chez un client ou bien en tant que freelance.
             </p>
-            <iframe width="420" height="320" src="https://www.youtube.com/watch?v=UaDxvDmpIqY"></iframe>
         </article>
+            <iframe width="420" height="320" src="https://www.youtube.com/watch?v=UaDxvDmpIqY"></iframe>
+        
         </div>
 
         
@@ -104,17 +126,17 @@
 
             <form>
                 <label>First Name</label>
-                <input type="text" name="FirstName"/>
+                <input type="text"/>
                 <br>
                 <label>Last Name</label>
-                <input type="text" name="LastName"/>
+                <input type="text"/>
                 <br>
                 <label>Adresse E-mail</label>
-                <input type="text" name="Adresse E-mail">
+                <input type="text">
                 <br>
-                <textarea name="Message" id="" cols="40" rows="10">
-                    Votre message
-                </textarea>
+                <textarea placeholder="Message" cols="40" rows="10"></textarea>
+                   
+                
                 <br>
                 <button type="submit">Me Contacter</button>
 
@@ -125,9 +147,14 @@
      
 
         <a href="#TopOfThePage">Take me to the top of the page</a>
+     </main>
+
 
         <footer>
-         Elyes ammar   HTML checkpoint
+         <p class="p1"> Elyes ammar </p>
+         <p class="p1"> HTML checkpoint </p>
+         <p class="p1"> GoMyCode </p>
+         <p id="date">21/12/2022</p>
         </footer>
 
     </body>
